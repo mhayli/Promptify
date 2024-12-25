@@ -139,3 +139,35 @@ body {
 .change-background-icon:hover {
   transform: scale(1.1); /* Ingrandisce del 10% */
 }
+
+/* Media Query per iPhone */
+@media (max-width: 768px) {
+  /* Posizionamento delle bolle in due colonne sopra i prompt */
+  .bubbles {
+    display: grid; /* Usa il grid layout per disporre le bolle in due colonne */
+    grid-template-columns: repeat(2, 1fr); /* Due colonne di uguale larghezza */
+    gap: 15px; /* Spazio tra le bolle */
+    justify-items: center; /* Centra le bolle orizzontalmente */
+    position: absolute; /* Mantieni la posizione assoluta */
+    top: 10%; /* Posizione sopra i prompt */
+    left: 50%; /* Centrato orizzontalmente */
+    transform: translateX(-50%); /* Centra esattamente */
+    z-index: 1; /* Imposta un valore di z-index per mantenerle sopra gli altri elementi */
+  }
+
+  /* Frase motivazionale centrata in basso */
+  #motivationalQuote {
+    position: fixed; /* Posizione fissa */
+    bottom: 10px; /* Spazio dal basso */
+    max-width: 90%; /* Massima larghezza al 90% dello schermo */
+    font-size: 14px; /* Riduci la dimensione del testo per dispositivi piccoli */
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(51, 51, 51, 0.8); /* Colore grigio trasparente */
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word; /* Permette al testo di andare a capo */
+    line-height: 1.5; /* Aggiungi un po' di spazio tra le righe */
+  }
+}
