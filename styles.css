@@ -20,6 +20,10 @@ body {
   height: 100%;
 }
 
+.promptBenvenuto {
+  color: #771ae9; /* Cambia il colore con quello che preferisci */
+}
+
 .prompt {
   position: absolute;
   top: 50%;
@@ -43,6 +47,8 @@ body {
   align-items: center;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  line-height: 1.5; /* Aggiungi questa proprietà per un'interlinea più ampia */
+  font-family: "Special Elite", cursive; /* Font Special Elite */
 }
 
 .motivational-quotes {
