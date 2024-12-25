@@ -23,11 +23,10 @@ const scenarioPrompts = [
 const wordPrompts = ["Cielo", "Fiume", "Tempesta", "Luna", "Vento"];
 
 const motivationalQuotes = [
-  "La scrittura è la pittura della voce. - Voltaire",
-  "Non smettere mai di scrivere, anche quando non sai dove ti sta portando. - Anonimo",
-  "Scrivere è l'arte di scoprire ciò che credi. - Gustave Flaubert",
-  "La scrittura è un viaggio senza fine. - Anonimo",
-  "Ogni grande scrittore è un po' pazzo. - Anonimo",
+  "La scrittura è la pittura della voce.",
+  "Non smettere mai di scrivere, anche quando non sai dove ti sta portando.",
+  "Scrivere è l'arte di scoprire ciò che credi.",
+  "La scrittura è un viaggio senza fine.",
 ];
 
 function givePrompt() {
