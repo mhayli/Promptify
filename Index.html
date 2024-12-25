@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promptify</title>
+
+    <!-- Aggiungi il link alla favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Frase motivazionale -->
+      <div class="motivational-quote" id="motivationalQuote">
+        La tua frase motivazionale qui
+      </div>
+
+      <!-- Prompt al centro -->
+      <div class="prompt" id="promptArea">
+        Clicca un pulsante per generare un prompt di scrittura!
+      </div>
+
+      <!-- Bolle a sinistra -->
+      <div class="bubbles">
+        <div class="bubble">Un'idea per distarsi</div>
+        <div class="bubble">Chi è?</div>
+        <div class="bubble">Scenario da sogno?</div>
+        <div class="bubble">Una Parola per ispirarti</div>
+      </div>
+
+      <!-- Icona per cambiare sfondo -->
+      <div class="change-background-icon" onclick="changeBackground()">
+        <img
+          src="https://img.icons8.com/?size=100&id=adoR154wxHd4&format=png&color=000000"
+          alt="Cambia sfondo"
+        />
+      </div>
+    </div>
+
+    <!-- Includi i file JavaScript -->
+    <script src="prompts.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
