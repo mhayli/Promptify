@@ -1,0 +1,41 @@
+const wordPrompts = [
+  "Cielo",
+  "Fiume",
+  "Tempesta",
+  "Luna",
+  "Vento",
+  "Incocciare",
+  "Criptovaluta",
+  "Algoritmo",
+  "Quasar",
+  "Nebulosa",
+  "Eclissi",
+  "Rifrazione",
+  "Sisma",
+  "Ologramma",
+  "Elettrone",
+  "Cerniera",
+  "Armonica",
+  "Frequenza",
+  "Acufene",
+  "Anomalia",
+  "Sonda",
+  "Polinomio",
+  "Rendimento",
+  "Riflesso",
+  "Paradosso",
+  "Cibernetico",
+  "Equilibrio",
+  "Transizione",
+  "Frattale",
+  "Equazione",
+  "Meteo",
+  "Intelligenza",
+  "Resilienza",
+  "Cybersicurezza",
+];
+
+function giveWordPrompt() {
+  const randomIndex = Math.floor(Math.random() * wordPrompts.length);
+  document.getElementById("promptArea").textContent = wordPrompts[randomIndex];
+}
