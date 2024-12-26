@@ -21,7 +21,7 @@ body {
 }
 
 .promptBenvenuto {
-  color: #771ae9; /* Cambia il colore con quello che preferisci */
+  color: #771ae9;
 }
 
 .prompt {
@@ -47,38 +47,38 @@ body {
   align-items: center;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  line-height: 1.5; /* Aggiungi questa proprietà per un'interlinea più ampia */
-  font-family: "Special Elite", cursive; /* Font Special Elite */
+  line-height: 1.5;
+  font-family: "Special Elite", cursive;
 }
 
 .motivational-quotes {
-  position: fixed; /* Cambia da absolute a fixed */
+  position: fixed;
   bottom: 10px;
   right: 10px;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  align-items: flex-end; /* Mantieni l'allineamento a destra */
+  align-items: flex-end;
 }
 
 /* Posizionamento fisso della frase motivazionale in basso a destra */
 #motivationalQuote {
-  position: fixed; /* Posizione fissa */
-  bottom: 20px; /* Aggiungi uno spazio dal basso */
-  right: 20px; /* Aggiungi uno spazio dalla destra */
-  background-color: rgba(51, 51, 51, 0.8); /* Colore grigio trasparente */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(51, 51, 51, 0.8);
   color: white;
   padding: 10px;
   border-radius: 8px;
-  width: 500px; /* Imposta una larghezza fissa */
-  height: 50px; /* Imposta un'altezza fissa */
+  width: 500px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 16px;
   box-sizing: border-box;
-  word-wrap: break-word; /* Permette al testo di andare a capo */
+  word-wrap: break-word;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -98,7 +98,7 @@ body {
 .bubble {
   width: 100px;
   height: 100px;
-  background-color: rgba(51, 51, 51, 0.8); /* Colore grigio trasparente */
+  background-color: rgba(51, 51, 51, 0.8);
   color: white;
   display: flex;
   justify-content: center;
@@ -106,10 +106,10 @@ body {
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-size: 14px; /* Ridotta leggermente la dimensione del testo */
+  font-size: 14px;
   text-align: center;
-  padding: 5px; /* Aggiunto padding per testo centrato */
-  word-wrap: break-word; /* Permette al testo di andare a capo */
+  padding: 5px;
+  word-wrap: break-word;
 }
 
 .bubble:hover {
@@ -121,7 +121,7 @@ body {
   top: 15px;
   right: 15px;
   cursor: pointer;
-  background-color: rgba(51, 51, 51, 0.8); /* Colore grigio trasparente */
+  background-color: rgba(51, 51, 51, 0.8);
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -142,32 +142,74 @@ body {
 
 /* Media Query per iPhone */
 @media (max-width: 768px) {
-  /* Posizionamento delle bolle in due colonne sopra i prompt */
+  .bubble {
+    width: 120px;
+    height: 120px;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+    word-wrap: break-word;
+  }
+
   .bubbles {
     display: grid; /* Usa il grid layout per disporre le bolle in due colonne */
     grid-template-columns: repeat(2, 1fr); /* Due colonne di uguale larghezza */
     gap: 15px; /* Spazio tra le bolle */
-    justify-items: center; /* Centra le bolle orizzontalmente */
-    position: absolute; /* Mantieni la posizione assoluta */
-    top: 10%; /* Posizione sopra i prompt */
+    justify-items: center;
+    position: absolute;
+    top: 20%;
     left: 50%; /* Centrato orizzontalmente */
     transform: translateX(-50%); /* Centra esattamente */
     z-index: 1; /* Imposta un valore di z-index per mantenerle sopra gli altri elementi */
   }
 
-  /* Frase motivazionale centrata in basso */
   #motivationalQuote {
-    position: fixed; /* Posizione fissa */
-    bottom: 10px; /* Spazio dal basso */
-    max-width: 90%; /* Massima larghezza al 90% dello schermo */
-    font-size: 14px; /* Riduci la dimensione del testo per dispositivi piccoli */
+    position: fixed;
+    bottom: 20px;
+    max-width: 90%;
+    font-size: 14px;
     padding: 10px;
     text-align: center;
-    background-color: rgba(51, 51, 51, 0.8); /* Colore grigio trasparente */
+    background-color: rgba(51, 51, 51, 0.8);
     color: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     word-wrap: break-word; /* Permette al testo di andare a capo */
     line-height: 1.5; /* Aggiungi un po' di spazio tra le righe */
+  }
+
+  .prompt {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(
+      237,
+      231,
+      231,
+      0.801
+    ); /* sfondo bianco con trasparenza */
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    min-height: 80px;
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    line-height: 1.5;
+    font-family: "Special Elite", cursive;
   }
 }
