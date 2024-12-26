@@ -158,7 +158,7 @@ body {
   /* Frase motivazionale centrata in basso */
   #motivationalQuote {
     position: fixed; /* Posizione fissa */
-    bottom: 10px; /* Spazio dal basso */
+    bottom: 20px; /* Spazio dal basso */
     max-width: 90%; /* Massima larghezza al 90% dello schermo */
     font-size: 14px; /* Riduci la dimensione del testo per dispositivi piccoli */
     padding: 10px;
@@ -173,7 +173,7 @@ body {
 
   .prompt {
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
