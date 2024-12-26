@@ -142,28 +142,43 @@ body {
 
 /* Media Query per iPhone */
 @media (max-width: 768px) {
-  /* Posizionamento delle bolle in due colonne sopra i prompt */
+  .bubble {
+    width: 120px;
+    height: 120px;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+    word-wrap: break-word;
+  }
+
   .bubbles {
     display: grid; /* Usa il grid layout per disporre le bolle in due colonne */
     grid-template-columns: repeat(2, 1fr); /* Due colonne di uguale larghezza */
     gap: 15px; /* Spazio tra le bolle */
-    justify-items: center; /* Centra le bolle orizzontalmente */
-    position: absolute; /* Mantieni la posizione assoluta */
-    top: 20%; /* Posizione sopra i prompt */
+    justify-items: center;
+    position: absolute;
+    top: 20%;
     left: 50%; /* Centrato orizzontalmente */
     transform: translateX(-50%); /* Centra esattamente */
     z-index: 1; /* Imposta un valore di z-index per mantenerle sopra gli altri elementi */
   }
 
-  /* Frase motivazionale centrata in basso */
   #motivationalQuote {
-    position: fixed; /* Posizione fissa */
-    bottom: 20px; /* Spazio dal basso */
-    max-width: 90%; /* Massima larghezza al 90% dello schermo */
-    font-size: 14px; /* Riduci la dimensione del testo per dispositivi piccoli */
+    position: fixed;
+    bottom: 20px;
+    max-width: 90%;
+    font-size: 14px;
     padding: 10px;
     text-align: center;
-    background-color: rgba(51, 51, 51, 0.8); /* Colore grigio trasparente */
+    background-color: rgba(51, 51, 51, 0.8);
     color: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
