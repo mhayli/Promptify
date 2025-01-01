@@ -31,6 +31,7 @@ const motivationalQuotes = [
   "Le parole possono curare, possono ispirare, possono cambiare il mondo.",
   "Scrivere è riscoprire se stessi attraverso il flusso delle parole.",
   "Non esistono errori nella scrittura, solo scoperte.",
+  "Qualsiasi grande storia viene raccontata una parola alla volta. - Cerusico",
 ];
 
 function changeMotivationalQuote() {
